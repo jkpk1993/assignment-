@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Rose",cursive;
+}
+
+body { 
+  
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+   
+}
+
+.hero_image {
+
+    background: url(img1.png) no-repeat;
+box-sizing: border-box;
+font-family: "Red Rose",cursive; 
+height: 100vh;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+.hero_wrapper {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero_wrapper {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+    margin-top: 55px;
+
+}
+.list {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    list-style: none;
+    font-family: "Red Rose";
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #ffc233;
+}
+.logo,
+    .list-item{
+        cursor: pointer;
+
+}
+.button-small {
+    padding: 12px 40px;
+    background-color:#ff505f;
+    border: none;
+    font-family: "Red Rose";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    cursor: pointer;
+   
+}
+/*----------*/
+/*-----hero---*/
+    .hero {
+        max-width: 1154px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+.hero-heading {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.4rem;
+    line-height: 100px;
+    color: #ffc233;
+    text-align: center;
+}
+
+.button-large {
+    padding: 24px 56px;
+    background: #ff505f;
+    border: none;
+    font-family: "Red Rose";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    margin-top: 64px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+   
+   
+}
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    right:40px;
+   
+
+
+}
