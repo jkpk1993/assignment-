@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            padding: 10px 50px;
+        }
+        .formdesign{
+            font-size: 20px;
+        }
+        .formdesign input{
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 4px;
+            font-size: 15px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1> Welcome to the best form on Internet !</h1>
+        <form action="/myaction.php" name="myForm" onsubmit=" return validateform()" method="post">
+            <div class="formdesign" id="name">
+        Name: <input type="text" name="fname"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div class="formdesign" id="name">
+        Email: <input type="text" name="femail"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div class="formdesign" id="name">
+        phone number: <input type="text" name="fphone"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div class="formdesign" id="name">
+        password: <input type="text" name="fpass"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div class="formdesign" id="name">
+        age: <input type="number" name="fage"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div >
+        Gender: Male<input type="radio" name ="myGender"> female<input type="radio" name ="myGender">
+    Other<input type="radio" name ="myGender">
+        
+
+    </div>
+    <div >
+        date: <input type="date" name="fdate"><b><span class="formerror"></span></b>
+        
+
+    </div>
+    <div >
+        Color Picker:<input type="color" name ="ColorPicker">
+        
+
+    </div>
+    </form>
+    </body>
+    <script>
+        function seterror(id,error){
+            // sets error inside tag of id
+            Element=document.getElementById(id);
+            Element.getElementByClassName('formerror')[0].innerHTML=error;
+        }
+        function validateForm(){
+            var returnval=true;
+            //perform validation and if validation fails,set the value of returnval to false
+            var name=document.forms['myForm']["fname"].value;
+           if (name.length<5){
+            seterror("name", "*length of name is too short");
+            returnval=false; 
+             }
+             return returnval;
+        }
+    </script>
+    
